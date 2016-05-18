@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jqm/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/listaOfertas.css">
+</head>
+<body>
+	<div data-role="page" id="detallePage">
+
+		<div data-role="header">
+			<h1>Oferton!</h1>
+		</div>
+	
+		<div data-role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true">
+			<li>
+				<div>
+					<h3 id="nombre"></h3>
+				</div>		
+				<p id="descripcion"></p>
+				<p id="fechainicio"></p>
+				<p id="fechafin"></p>
+				<p id="telefono"></p>
+				<p id="email"></p>				
+			</li>
+		</ul>
+
+		</div>
+	</div>
+
+<script src="js/getoferta.js"></script>
+</body>
+</html>
