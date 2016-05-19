@@ -4,9 +4,8 @@ var sucursales;
 
 $('#detallePage').on('pageinit', function(event) {
 	var id = getUrlVars()["id"];
-    var ide= getUrlVars()["ide"];
 	$.getJSON(serviceURL + 'getdetalleoferta.php?id='+id, displayDetalle);
-    $.getJSON(serviceURL + 'getsucursalesporoferta.php?ide='+ide, displaySucursales);
+    $.getJSON(serviceURL + 'getsucursalesporoferta.php?ide='+id, displaySucursales);
 });
 
 function displayDetalle(data) {
