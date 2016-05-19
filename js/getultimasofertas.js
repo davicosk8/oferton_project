@@ -12,10 +12,11 @@ function getultimasofertas() {
 		$.each(ultimasofertas, function(index, ofertas) {
 			$('#ultimasofertasList').append(
 			'<li data-icon="false">'+
-				'<a href="detalleoferta.html?id='+ofertas.ofertaid+'" id="objetodelistanovedades" rel="external">'+
+				'<a href="detalleoferta.html?id='+ofertas.ofertaid+'&ide='+ofertas.ofertaid+'" id="objetodelistanovedades" rel="external">'+
 					'<img src="img/'+ofertas.ofertaimagen+'"/>'+
-					'<h4>'+ofertas.ofertanombre+'</h4>'+
-					'<p>'+ofertas.ofertadescripcion+'</p>'+
+					'<h4 id="tituloofertadelista">'+ofertas.ofertanombre+'</h4>'+
+					'<h6 id="hastaofertadelista">Hasta:</h6>'+
+					'<p id="fechafinofertadelista">'+ofertas.ofertafechafin+'</p>'+
 					'<p class="ui-li-aside">'+ofertas.empresanombre+'</p>'+
 				'</a>'+
 			'</li>'

@@ -3,3 +3,24 @@
 	border-width: 2px;
 	border-radius: 6px;
 }
+
+#tituloofertadelista { /*el que aparece con el nombre de la oferta en la lista*/
+	margin:8px 0px 0px 0px;
+	padding: 0px;
+}
+
+#hastaofertadelista { /*palabra hasta en la lista de ofertas*/
+	margin:0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#fechafinofertadelista { /*fechafin que aparece en la lista de ofertas*/
+	margin:0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#bloquededetalle{
+	border-width: 2px;
+	border-radius: 6px;
+
+}
