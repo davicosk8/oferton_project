@@ -24,3 +24,18 @@
 	border-radius: 6px;
 
 }
+
+#map{
+  display: block;
+  width: 95%;
+  height: 350px;
+  margin: 0 auto;
+  -moz-box-shadow: 0px 5px 20px #ccc;
+  -webkit-box-shadow: 0px 5px 20px #ccc;
+  box-shadow: 0px 5px 20px #ccc;
+}
+
+.swiper-container {
+    width: 450px;
+    height: 450px;
+}  
