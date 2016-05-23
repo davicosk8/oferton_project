@@ -60,21 +60,22 @@ function displayImagenes(data) {
     imagenes = data.items;
     $(document).ready(function() {
         //initialize swiper when document ready  
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            spaceBetween: 40,
-            direction: 'horizontal',
-            loop: true
-        })
-
         $.each(imagenes, function(index, imagen) {
             $('#imagen').append(
-                    '<div class="swiper-slide"><img src=img/'+imagen.imagendir+' height="100%" width="100%"></div>'
-                );
+                '<div class="swiper-slide"><img src=img/' + imagen.imagendir + ' height="100%" width="100%"></div>'
+            );
         });
 
     });
-
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 40,
+        direction: 'horizontal',
+        loop: true
+    })
 }
 
 function getUrlVars() {
