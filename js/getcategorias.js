@@ -1,4 +1,4 @@
-var serviceURL = "http://localhost/oferton_services/";
+var serviceURL = "http://servicesphp.esy.es/";
 
 var categorias;
 

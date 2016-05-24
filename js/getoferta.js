@@ -1,4 +1,4 @@
-var serviceURL = "http://localhost/oferton_services/";
+var serviceURL = "http://servicesphp.esy.es/";
 
 var sucursales;
 var imagenes;
@@ -62,7 +62,7 @@ function displayImagenes(data) {
         //initialize swiper when document ready  
         $.each(imagenes, function(index, imagen) {
             $('#imagen').append(
-                '<div class="swiper-slide"><img src=img/' + imagen.imagendir + ' height="100%" width="100%"></div>'
+                '<div class="swiper-slide"><img src=img/' + imagen.imagendir + ' class="imagenoferta"></div>'
             );
         });
 
@@ -70,7 +70,7 @@ function displayImagenes(data) {
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         pagination: '.swiper-pagination',
-        slidesPerView: 3,
+        slidesPerView: 1,
         paginationClickable: true,
         spaceBetween: 40,
         direction: 'horizontal',
