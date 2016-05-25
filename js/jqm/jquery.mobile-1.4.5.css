@@ -4586,12 +4586,15 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 	left: 0;
 	-webkit-transform: translate3d(-17em,0,0);
 	-moz-transform: translate3d(-17em,0,0);
+	
 	transform: translate3d(-17em,0,0);
 }
 /* Panel left open */
 .ui-panel-position-left.ui-panel-display-reveal, /* Unset "panel left closed" for reveal */
-.ui-panel-open.ui-panel-position-left {
+.ui-panel-open.ui-panel-position-left {/*Aaumentamos el color de fondo q sea rojo*/
 	left: 0;
+	color: white;
+	background-color: #DF314D;
 }
 /* Panel left open animated */
 .ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-overlay,
@@ -4660,24 +4663,24 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 }
 /* Shadows and borders */
 .ui-panel-display-reveal {
-	-webkit-box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
-	box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
+	-webkit-box-shadow: inset 0px 0 0px rgba(0,0,0,.15);
+	-moz-box-shadow: inset 0px 0 0px rgba(0,0,0,.15);
+	box-shadow: inset 0px 0 0px rgba(0,0,0,.15);
 }
 .ui-panel-position-right.ui-panel-display-reveal {
-	-webkit-box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
-	box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
+	-webkit-box-shadow: inset 0px 0 0px rgba(0,0,0,.15);
+	-moz-box-shadow: inset 0px 0 0px rgba(0,0,0,.15);
+	box-shadow: inset 0px 0 0px rgba(0,0,0,.15);
 }
 .ui-panel-display-overlay {
-	-webkit-box-shadow: 5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: 5px 0 5px rgba(0,0,0,.15);
-	box-shadow: 5px 0 5px rgba(0,0,0,.15);
+	-webkit-box-shadow:  0px 0 0px rgba(0,0,0,.15);
+	-moz-box-shadow:  0px 0 0px rgba(0,0,0,.15);
+	box-shadow:  0px 0 0px rgba(0,0,0,.15);
 }
 .ui-panel-position-right.ui-panel-display-overlay {
-	-webkit-box-shadow: -5px 0 5px rgba(0,0,0,.15);
-	-moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
-	box-shadow: -5px 0 5px rgba(0,0,0,.15);
+	-webkit-box-shadow:  0px 0 0px rgba(0,0,0,.15);
+	-moz-box-shadow:  0px 0 0px rgba(0,0,0,.15);
+	box-shadow:  0px 0 0px rgba(0,0,0,.15);
 }
 .ui-panel-open.ui-panel-position-left.ui-panel-display-push {
 	border-right-width: 1px;
