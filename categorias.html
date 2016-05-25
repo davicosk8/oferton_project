@@ -4,7 +4,10 @@
 		<meta charset="UTF-8">
 		<title>Document</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.5.css">
+		<link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
 		<link rel="stylesheet" href="css/listaOfertas.css">
 	</head>
 	<body>
@@ -12,31 +15,21 @@
 			<div data-role="header">
 				<h1>Oferton!</h1>
 				
-				<a href="#mypanel" data-icon="arrow-l" data-iconpos="notext" >Open right panel</a>
+				<a href="#mypanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
 			</div>
 			<div data-role="main" class="ui-content">
 				<ul data-role="listview" id="categoriasList">
 				</ul>
 			</div>
-			<div data-role="panel" id="mypanel" >
-				<div>
-					cabeceramieee
-				</div>
-				<div>
-					primer objeto
-				</div>
-				<div>
-					segundo objeto
-				</div>
-				<div>
-					tercer objeto
-				</div>
-
-			</div>
+			<nd2-include data-src="Fragments/menu.html"></nd2-include>
 		</div>
 		
 		<script src="js/jquery-1.12.3.min.js"></script>
 		<script src="js/jqm/jquery.mobile-1.4.5.min.js"></script>
 		<script src="js/getcategorias.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
 	</body>
 </html>

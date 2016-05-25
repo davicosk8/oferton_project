@@ -4,29 +4,32 @@
 		<meta charset="UTF-8">
 		<title>Document</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.5.css">
+		<link rel="stylesheet" href="js/jqm/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
 		<link rel="stylesheet" href="css/listaOfertas.css">
+		
 	</head>
 	<body>
-		<div data-role="page" id="ofertasPage">
+		<div data-role="page" id="ofertasPage" class="clr-bg-grey">
 			<div data-role="header">
 				<h1>Oferton!</h1>
+				<a href="#mypanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
 			</div>
-			<div data-role="main" class="ui-content">
-			<ul data-role="listview" id="ofertasList"></ul>
+			<div data-role="main" class="ui-contentLista">
+				<ul data-role="listview" id="ofertasList" class="listaOFertas">
+					
+				</ul>
+			</div>
+			<nd2-include data-src="Fragments/menu.html"></nd2-include>
 		</div>
-	</div>
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-78273404-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	
-	<script src="js/jquery-1.12.3.min.js"></script>
-	<script src="js/jqm/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/getofertasporcategoria.js"></script>
-</body>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/jqm/jquery.mobile-1.4.5.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+		<script src="js/getofertasporcategoria.js"></script>
+	</body>
 </html>
